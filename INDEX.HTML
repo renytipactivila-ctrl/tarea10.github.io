@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 10 </title>
+   
+   <style>
+        
+        #container {
+            display: grid;
+            grid-template-columns: repeat(4, 140px);   
+            grid-template-rows: repeat(3, 150px);    
+            gap: 10px;                               
+            padding: 15px;
+            border: 2px solid black;                  
+            max-width: 600px;
+            margin-top: 20px;
+
+            
+            grid-template-areas: 
+                "uno dos   dos   tres"
+                "uno cinco siete cuatro"
+                "uno ocho  seis  cuatro";
+        }
+
+        
+        .caja {
+            width: 100%;
+            height: 100%;
+            color: white;
+            border: 1px solid, black;   
+            align-content: center;
+            text-align: center;
+        }
+
+        
+        .uno { 
+            grid-area: uno; 
+            background-color: green; 
+        }
+        .dos { 
+            grid-area: dos; 
+            background-color: green; 
+        }
+        .tres { 
+            grid-area: tres; 
+            background-color: red; 
+        }
+        .cuatro { 
+            grid-area: cuatro; 
+            background-color: green; 
+        }
+        .cinco { 
+            grid-area: cinco; 
+            background-color: yellow; 
+        }
+        .seis { 
+            grid-area: seis; 
+            background-color: yellow; 
+        }
+        .siete { 
+            grid-area: siete; 
+            background-color: red; 
+        }
+        .ocho { 
+            grid-area: ocho; 
+            background-color: red; 
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Grid 1</h1>
+
+    
+    <div id="container">
+        <div class="caja uno">UNO</div>
+        <div class="caja dos">DOS</div>
+        <div class="caja tres">TRES</div>
+        <div class="caja cuatro">CUATRO</div>
+        <div class="caja cinco">CINCO</div>
+        <div class="caja seis">SEIS</div>
+        <div class="caja siete">SIETE</div>
+        <div class="caja ocho">OCHO</div>
+    </div>
+
+</body>
+</html>
